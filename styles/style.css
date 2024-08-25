@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+  
+:root {
+    --pink-100: rgba(254, 237, 234, 1);
+    --pink-200: rgba(217, 163, 163, 1);
+    --green-100: rgba(91, 116, 75, 0.3);
+    --green-200: rgba(91, 116, 75, 1);
+    --green-300: rgba(71, 85, 61, 1);
+    --grey-100: rgba(73, 80, 87, 1);
+    --white: rgb(255,255,255);
+    --font: 'Rufina', serif;
+}
+
+* {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1rem; 
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--font);
+    background-color: var(--pink-100);
+    display: flex;
+    flex-direction: column;   
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    top: 10px;
+    transform: translateX(10px);
+}
+
+header .logo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 60px;
+    height: auto;
+    margin-left: 32px;
+}
+
+/* Área de contenido principal */
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+    gap: 60px;
+}
+
+/* Caja de encriptación y botones */
+.caja_encriptacion_botones {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+}
+
+#ingresar_mensaje {
+    border: none;
+    color: var(--pink-200);
+    padding-top: 5px;
+    text-transform: lowercase;
+    font-size: 32px;
+    box-sizing: border-box;
+    resize: none;
+    width: 600px;
+    height: 265px;
+    background: var(--pink-100);
+}
+
+#ingresar_mensaje:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: var(--pink-200);
+    font-size: 32px;
+}
+
+.info_botones {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.info img {
+    width: 14px;
+    height: auto;
+}
+
+.info h6 {
+    margin: 0;
+    font-size: 14px;
+    color: var(--grey-100);
+    font-weight: 200;
+}
+
+/* Botones */
+.botones button {
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--green-100);
+    color: var(--green-300);
+    width: 300px;
+    height: 67px;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.boton_encriptar, .boton_desencriptar {
+    transition: all 0.5s;
+}
+
+.botones {
+    display: flex;
+    gap: 30px;
+    margin-top: 18px;
+}
+
+/* Caja de resultado */
+.mensaje {
+    border: none;
+    border-radius: 24px;
+    background: var(--green-100);
+    position: relative;
+    overflow: auto;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 490px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px 4px var(--green-100);
+}
+
+#mensaje_contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 3px;
+}
+
+.mensaje h1,
+.mensaje h3,
+.mensaje img {
+    margin: 0;
+    text-align: center;
+}
+
+.mensaje img {
+    height: 250px;
+    width: auto;
+    animation: slideDownUp 3s ease-in-out infinite;
+}
+
+.mensaje h1 {
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--green-300);
+}
+
+.mensaje h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--green-200);
+}
+
+#texto_salida {
+    border: none;
+    color: var(--green-300);
+    font-size: 24px;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 300px;
+    margin-right: 20px;
+}
+
+#texto_salida:focus {
+    display: none;
+}
+
+/* -OCULTO- */
+.ocultar {
+    display: none;
+}
+
+.boton_copiar {
+    border: 1px solid var(--green-300) ;
+    border-radius: 24px;
+    background-color: transparent;
+    color: var(--green-300);
+    width: 450px;
+    height: 57px;
+    margin-top: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-100);
+    background-color: var(--pink-100);
+    padding-top: 32px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 400;
+    gap: 2px;
+    margin-top: auto;
+}
+
+.footer p{
+    font-weight: 300;
+    color: var(--grey-100);
+}
+
+.footer_github {
+    color: var(--pink-200);
+    text-decoration: none;
+}
+
+.footer_github_user {
+    line-height: 1.25;
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.footer_github_user:hover{
+    font-size: 18px;
+}
+
+.footer img {
+    width: 24px;
+}
+
+@keyframes slideDownUp {
+    0% {
+        transform: translateY(-0.438rem); 
+    }
+    50% {
+        transform: translateY(0rem); 
+    }
+    100% {
+        transform: translateY(-0.438rem); 
+    }
+}

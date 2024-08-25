@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="shortcut icon" href="./assets/rose_pressed_flower.png" type="image/x-icon">
+    <!--TAB TITLE-->        
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/rose_pressed_flower.png" alt="Ave del paraiso ilustrada.">
+    </header>
+
+    <main>
+        <section class="caja_encriptacion_botones">
+            <div>
+                <textarea id="ingresar_mensaje" cols="42" rows="4" placeholder="Escribe aquí..."></textarea>
+            </div>
+            <div class="info_botones">
+                <div class="info">
+                    <img src="./assets/exclamation_point.png" alt="Icono de signo de exclamación, dentro de un circulo.">
+                    <h6>Utilice solamente minúsculas, no utilizar caracteres especiales ni acentos.</h6>
+                </div>
+
+                <div class="botones">
+                    <button onclick="encriptar()" class="boton_encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" class="boton_desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="caja_resultado">
+            <div class="mensaje">
+                <div id="mensaje_contenido">
+                    <img src="./assets/pink_flowers.png" alt="Flores rosas.">
+                    <div class="recibir_mensaje">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <h3>Ingresa el texto que deseeas encriptar o desencriptar.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Realizado por
+            <img src="./assets/github_icon.png" alt="Logo github">
+            <a class="footer_github" href="https://github.com/pmisiac00">
+                <b class="footer_github_user">/pmisiac00</b>
+            </a>
+        </p>    
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

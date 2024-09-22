@@ -43,11 +43,11 @@ Las letras en mayúsculas se convierten a minúsculas mediante estilos CSS en el
 * Alerta de visualización: Se muestra una alerta al usuario al intentar activar los botones de Encriptar o Desencriptar sin proporcionar un texto válido.
 
 ## :camera: Visualización previa:
-![Vista previa del proyecto](assets/encriptador_version_web.png)
+![Imagen version web desktop](assets/encriptador_version_web.png)
 
 
 ## :arrow_right: Acceso a la aplicación:
-[Visita nuestra página](https://pmisiac00.github.io/Challenge---Encriptador-de-textos/)
+[Link al Encriptador!](https://pmisiac00.github.io/Challenge---Encriptador-de-textos/)
 
 
 

@@ -43,7 +43,8 @@ Las letras en mayúsculas se convierten a minúsculas mediante estilos CSS en el
 * Alerta de visualización: Se muestra una alerta al usuario al intentar activar los botones de Encriptar o Desencriptar sin proporcionar un texto válido.
 
 ## :camera: Visualización previa:
-<img src="">
+![Vista previa del proyecto](assets/encriptador_version_web.png)
+
 
 ## :arrow_right: Acceso a la aplicación:
 
